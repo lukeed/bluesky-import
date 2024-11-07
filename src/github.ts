@@ -4,6 +4,7 @@ import { join, relative, resolve } from 'node:path';
 import { promptSecret } from 'jsr:@std/cli/prompt-secret';
 
 import type { Endpoints } from 'npm:@octokit/types@13.6.1';
+import type { Source } from './types.ts';
 
 // https://github.com/settings/personal-access-tokens/new
 // Requires: "Account Permissions" > "Followers" > "Read-only"
@@ -33,12 +34,6 @@ type $$<K extends keyof Endpoints> = Endpoints[K]['response']['data'];
 
 let following = await GET<$$<'GET /user/following'>>(`/user/following`);
 assert(following.length > 0, 'You are not following anyone');
-
-type Source = {
-	login: string;
-	avatar: string;
-	bluesky?: string;
-};
 
 let output: Source[] = await Promise.all(
 	following.map(async (user) => {

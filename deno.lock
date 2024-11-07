@@ -6,7 +6,9 @@
     "jsr:@std/dotenv@*": "0.225.2",
     "jsr:@std/internal@^1.0.4": "1.0.4",
     "npm:@octokit/types@13.6.1": "13.6.1",
-    "npm:@types/node@*": "22.5.4"
+    "npm:@types/node@*": "22.5.4",
+    "npm:preact-render-to-string@6.5": "6.5.11_preact@10.24.3",
+    "npm:preact@10.24": "10.24.3"
   },
   "jsr": {
     "@std/assert@1.0.6": {
@@ -41,8 +43,23 @@
         "undici-types"
       ]
     },
+    "preact-render-to-string@6.5.11_preact@10.24.3": {
+      "integrity": "sha512-ubnauqoGczeGISiOh6RjX0/cdaF8v/oDXIjO85XALCQjwQP+SB4RDXXtvZ6yTYSjG+PC1QRP2AhPgCEsM2EvUw==",
+      "dependencies": [
+        "preact"
+      ]
+    },
+    "preact@10.24.3": {
+      "integrity": "sha512-Z2dPnBnMUfyQfSQ+GBdsGa16hz35YmLmtTLhM169uW944hYL6xzTYkJjC07j+Wosz733pMWx0fgON3JNw1jJQA=="
+    },
     "undici-types@6.19.8": {
       "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
     }
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:preact-render-to-string@6.5",
+      "npm:preact@10.24"
+    ]
   }
 }
