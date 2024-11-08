@@ -38,7 +38,7 @@ $ deno task view export/github.json
 The Twitter API doesn't let you do anything, unless you pay big $$$ for Enterprise access... good thing we know our way around DevTools :wink:
 
 1. Log into your Twitter account
-2. Go to `https://twitter/com/following`
+2. Go to `https://twitter.com/following`
 3. Copy & paste [`src/twitter.js`](src/twitter.js) into the Console
 4. When it's done, run `copy(users)` in the Console
 5. Paste the clipboard contents into a new `export/twitter.json` file
