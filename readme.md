@@ -6,7 +6,7 @@ Includes two scripts and a (rough, but functional) UI to automate searcing & fol
 
 Absolutely no credentials are saved. In fact, you will have to reauthenticate every time you run a script or open the UI viewer.
 
-![bluesky-import demo](demo.mp4)
+https://github.com/user-attachments/assets/62809278-e6b9-4258-b972-927f3f406127
 
 
 ## Setup
