@@ -1,17 +1,7 @@
 {
   "tasks": {
     "github": "deno run -RWEN=api.github.com src/github.ts",
-    "view": "deno run --watch -RN src/view.tsx"
-  },
-  "imports": {
-    "preact": "npm:preact@10.24",
-    "preact-render-to-string": "npm:preact-render-to-string@6.5"
-  },
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "jsxFragmentFactory": "Fragment",
-    "jsxFactory": "h"
+    "view": "deno run --watch -RWN src/view.ts"
   },
   "fmt": {
     "lineWidth": 100,

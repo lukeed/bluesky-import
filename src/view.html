@@ -1,0 +1,150 @@
+<html lang="en">
+
+<meta charset="utf-8" />
+<title>Bluesky Users</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		font-size: 16px;
+		line-height: 1.5;
+		font-family: ui-sans-serif, system-ui, sans-serif;
+		font-feature-settings: normal;
+		font-variation-settings: normal;
+		-webkit-font-smoothing: antialiased;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	body {
+		width: 96vw;
+		min-width: 300px;
+		margin: 0 auto 2rem;
+		overflow-x: auto;
+	}
+
+	button {
+		cursor: pointer;
+		padding: 0.25rem;
+	}
+
+	header {
+		display: flex;
+		column-gap: 0.5rem;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 2rem;
+		padding: 1rem 0;
+	}
+
+	table {
+		width: 100%;
+		text-align: left;
+		border: 1px solid #ccc;
+		border-collapse: collapse;
+	}
+
+	th, td {
+		padding: 0.25rem 0.5rem;
+		border-bottom: 1px solid #ccc;
+	}
+
+	th {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		font-size: 0.875rem;
+		font-weight: 500;
+		color: #71717a;
+	}
+
+	caption {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		margin-bottom: 1rem;
+		color: #71717a;
+	}
+
+	figure {
+		display: flex;
+		align-items: center;
+		column-gap: 0.5rem;
+		padding: 0.25rem;
+	}
+
+	figcaption {
+		display: flex;
+		text-align: left;
+		flex-direction: column;
+		font-size: 0.875rem;
+		font-weight: 500;
+		gap: 0.25rem;
+	}
+
+	figcaption > small {
+		font-weight: 400;
+		color: #71717a;
+	}
+
+	img {
+		width: 2rem;
+		height: 2rem;
+		flex-shrink: 0;
+		align-self: flex-start;
+		border-radius: 9999px;
+	}
+
+	td nav {
+		display: flex;
+		column-gap: 0.5rem;
+	}
+
+	dialog {
+		position: fixed;
+		transform: translate(-50%, -50%);
+		border-radius: 0.5rem;
+		padding: 1rem;
+		width: 400px;
+		left: 50%;
+		top: 50%;
+	}
+
+	dialog::backdrop {
+		background-color: rgba(0, 0, 0, 0.5);
+		filter: blur(4px);
+	}
+
+	dialog > button {
+		position: absolute;
+		width: 1.5rem;
+		height: 1.5rem;
+		right: 0.5rem;
+		top: 0.5rem;
+	}
+
+	dialog form {
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.25rem;
+	}
+
+	input {
+		font-size: 16px;
+		padding: 0.25rem 0.5rem;
+	}
+
+	ul {
+		display: flex;
+		list-style: none;
+		flex-direction: column;
+		row-gap: 0.25rem;
+	}
+
+	ul button {
+		width: 100%;
+	}
+</style>
